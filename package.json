@@ -1,0 +1,25 @@
+{
+  "name": "csinogames",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass src/styling/scss/style.scss src/styling/css/style.css -w "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayush-thakur/csinogames.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayush-thakur/csinogames/issues"
+  },
+  "homepage": "https://github.com/ayush-thakur/csinogames#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  },
+  "dependencies": {
+    "slick-carousel": "^1.8.1"
+  }
+}

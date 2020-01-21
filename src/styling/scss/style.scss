@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese');
+@import "node_modules/slick-carousel/slick/slick-theme.scss";
+@import "node_modules/slick-carousel/slick/slick.scss";
+
+
+@font-face {
+    font-family: 'Gilroy_bold';
+    src: url('./fonts/Gilroy-ExtraBold.woff2') format('woff2'),
+        url('./fonts/Gilroy-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy_semibold';
+    src: url('./fonts/Gilroy-SemiBold.woff2') format('woff2'),
+        url('./fonts/Gilroy-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy_regular';
+    src: url('./fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('./fonts/Gilroy-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy_thin';
+    src: url('./fonts/Gilroy-Thin.woff2') format('woff2'),
+        url('./fonts/Gilroy-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy_meduim';
+    src: url('./fonts/Gilroy-Medium.woff2') format('woff2'),
+        url('./fonts/Gilroy-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@mixin dispaly($flex) {
+    -webkit-flex-direction: $flex;
+       -moz-flex-direction: $flex;
+        -ms-flex-direction: $flex;
+            flex-direction: $flex;
+  }
+
+
+
+h1{font-size: 100px;font-family: 'Gilroy_bold';}
+h2{font-size: 60px; font-family: 'Pacifico', cursive;}
+h3{font-size: 40px;font-family: 'Gilroy_bold'; }
+h4{font-size: 24px;    font-family: 'Gilroy_thin'; }
+p{font-size: 18px;    font-family: 'Gilroy_thin';}
+h1, h2, h3, h4, h5, h6{margin: 0;}
+ul{padding-left: 0; padding-right: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+figure{margin: 0;}
+figcaption{margin: 0;}
+
+$yellow:#ffce00;
+$black:#000;
+$white:#ffff;
+
+
+
+@mixin dispaly($flex) {
+    -webkit-flex-direction: $flex;
+       -moz-flex-direction: $flex;
+        -ms-flex-direction: $flex;
+            flex-direction: $flex;
+  }
+
+body{margin: 0 auto;     font-family: 'Gilroy_regular';  font-weight: normal;  font-style: normal }
+  .container {	width: 100%; max-width: 1830px;	margin: 0 auto;	padding-left: 15px;	padding-right: 15px;box-sizing: border-box;}
+@import "header";
+@import "baner";
+

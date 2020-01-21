@@ -109,6 +109,7 @@ header {
                      color: $black;
                      position: relative;
                      z-index: 99;
+                     
                      &:hover{color: $yellow;}
                      &::after {
                         position: absolute;

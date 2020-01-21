@@ -288,6 +288,35 @@ body {
   padding-right: 15px;
   box-sizing: border-box; }
 
+.primary_button {
+  font-size: 15px;
+  position: relative;
+  z-index: 99;
+  padding: 7px 12px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #000;
+  border: solid 2px #fadf00; }
+  .primary_button:hover {
+    color: #ffce00; }
+  .primary_button::after {
+    position: absolute;
+    background-color: #ffce00;
+    content: "";
+    width: 100%;
+    transition: all ease-in 0.5s;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    left: 0;
+    margin: 0 auto; }
+
+.primary_button:hover::after {
+  width: 0% !important;
+  transition: all ease-out 0.5s; }
+
 header {
   background-image: url(../../image/top-bar.jpg);
   width: 100%;
@@ -408,3 +437,55 @@ header {
         header .grid_row .butoon_top_bar .Join_Now a:hover::after {
           width: 0 !important;
           transition: all ease-out 0.5s; }
+
+#baner {
+  width: 100%;
+  overflow: hidden; }
+  #baner .slider_div {
+    width: 100%; }
+    #baner .slider_div .firt_slide {
+      width: 100%; }
+      #baner .slider_div .firt_slide img {
+        width: 100%; }
+
+#baner {
+  width: 100%;
+  overflow: hidden; }
+  #baner .slider_div {
+    width: 100%; }
+    #baner .slider_div .firt_slide {
+      width: 100%; }
+      #baner .slider_div .firt_slide figure {
+        position: relative; }
+        #baner .slider_div .firt_slide figure img {
+          width: 100%;
+          height: 850px;
+          object-fit: cover; }
+      #baner .slider_div .firt_slide .text {
+        width: 100%;
+        position: absolute;
+        bottom: 94px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center; }
+        #baner .slider_div .firt_slide .text h3 {
+          font-family: 'Pacifico', cursive;
+          color: #ffff; }
+        #baner .slider_div .firt_slide .text .primary_button {
+          padding: 14px 34px;
+          font-size: 17px;
+          margin-top: 36px;
+          display: inline-block; }
+    #baner .slider_div .slick-prev {
+      left: 37px;
+      z-index: 99; }
+    #baner .slider_div .a-right {
+      width: 60px;
+      height: 60px; }
+    #baner .slider_div .slick-next {
+      right: 37px;
+      z-index: 99; }
+    #baner .slider_div .a-left {
+      width: 60px;
+      height: 60px; }

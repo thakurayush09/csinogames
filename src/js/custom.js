@@ -12,3 +12,18 @@ $('.slider_div').slick({
 
   }
   );
+
+
+  
+$('.slider_div-s').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  arrows:false,
+  dots:true,
+  centerMode: true
+ 
+
+
+
+}
+);

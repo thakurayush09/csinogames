@@ -1,0 +1,53 @@
+#baner {
+	width: 100%;
+    overflow: hidden;
+    .slider_div {
+        width: 100%;
+        .firt_slide {
+            width: 100%;
+            figure{position: relative;
+            img {
+                width: 100%;
+                height: 850px;
+                object-fit: cover;
+            }
+        }
+        .text {
+            width: 100%;
+            position: absolute;
+            bottom: 94px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            text-align: center;
+
+            h3{font-family: 'Pacifico', cursive; color: $white;}
+
+
+            .primary_button {
+                padding: 14px 34px;
+                font-size: 17px;
+                margin-top: 36px;
+                display: inline-block;
+            }
+        }
+
+        }
+        .slick-prev {
+            left: 37px;
+            z-index: 99;
+        }
+        .a-right{width: 60px; height: 60px;}
+        .slick-next {
+            right: 37px;
+            z-index: 99;
+            
+        }
+        .a-left{width: 60px; height: 60px;}
+
+    }
+   
+
+
+
+}

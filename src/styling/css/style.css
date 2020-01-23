@@ -445,16 +445,6 @@ header {
     width: 100%; }
     #baner .slider_div .firt_slide {
       width: 100%; }
-      #baner .slider_div .firt_slide img {
-        width: 100%; }
-
-#baner {
-  width: 100%;
-  overflow: hidden; }
-  #baner .slider_div {
-    width: 100%; }
-    #baner .slider_div .firt_slide {
-      width: 100%; }
       #baner .slider_div .firt_slide figure {
         position: relative; }
         #baner .slider_div .firt_slide figure img {
@@ -489,3 +479,298 @@ header {
     #baner .slider_div .a-left {
       width: 60px;
       height: 60px; }
+
+#play {
+  width: 100%;
+  background-image: url(../../image/overlay-background.jpg);
+  height: 100%;
+  margin-top: -34px;
+  padding-top: 50px;
+  position: relative;
+  z-index: 99;
+  padding-bottom: 70px; }
+  #play::after {
+    position: absolute;
+    content: "";
+    background: rgba(143, 0, 6, 0.9);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1; }
+  #play h2 {
+    color: #ffff; }
+  #play .hrading {
+    text-align: center; }
+  #play .play_grid_row {
+    display: grid;
+    grid-template-columns: 67% 30%;
+    grid-column-gap: 3%; }
+    #play .play_grid_row .number {
+      width: 100%; }
+      #play .play_grid_row .number .child_grid_row {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center; }
+        #play .play_grid_row .number .child_grid_row .main-area .step {
+          display: flex;
+          display: -webkit-flex;
+          justify-content: center;
+          justify-content: -webkit-center; }
+          #play .play_grid_row .number .child_grid_row .main-area .step h1 {
+            color: white; }
+          #play .play_grid_row .number .child_grid_row .main-area .step h4 {
+            align-self: end;
+            transform: translate(6px, -13px);
+            -webkit-transform: translate(6px, -13px);
+            color: white;
+            text-transform: uppercase;
+            font-weight: 300; }
+        #play .play_grid_row .number .child_grid_row .main-area figure {
+          margin-top: 10px; }
+          #play .play_grid_row .number .child_grid_row .main-area figure img {
+            width: 140px;
+            height: 140px; }
+          #play .play_grid_row .number .child_grid_row .main-area figure figcaption {
+            margin-top: 19px; }
+            #play .play_grid_row .number .child_grid_row .main-area figure figcaption h3 {
+              color: white;
+              font-weight: 800;
+              text-transform: uppercase; }
+            #play .play_grid_row .number .child_grid_row .main-area figure figcaption p {
+              color: white;
+              margin-top: 14px; }
+    #play .play_grid_row .bar_code {
+      width: 100%;
+      text-align: center;
+      background: rgba(95, 0, 4, 0.7);
+      margin-top: 30px; }
+      #play .play_grid_row .bar_code .overlay {
+        width: 100%; }
+        #play .play_grid_row .bar_code .overlay .heading {
+          width: 100%; }
+          #play .play_grid_row .bar_code .overlay .heading h3 {
+            color: white;
+            line-height: 44px;
+            margin-top: 30px; }
+          #play .play_grid_row .bar_code .overlay .heading p {
+            color: white;
+            margin-top: 12px; }
+        #play .play_grid_row .bar_code .overlay .image {
+          width: 100%; }
+          #play .play_grid_row .bar_code .overlay .image figure {
+            width: 70%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 0 auto;
+            border: solid 2px #ffce00; }
+            #play .play_grid_row .bar_code .overlay .image figure img {
+              width: 108px;
+              height: 108px; }
+            #play .play_grid_row .bar_code .overlay .image figure figcaption {
+              align-self: center; }
+              #play .play_grid_row .bar_code .overlay .image figure figcaption .primary_button.btn {
+                padding: 9px 23px;
+                margin-left: -28px; }
+  #play .paly_game {
+    width: 100%;
+    margin-top: 70px; }
+    #play .paly_game .paly_heading {
+      background-image: url(../../image/yelolow.png);
+      text-align: center;
+      height: 144px;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; }
+      #play .paly_game .paly_heading h2 {
+        color: #ffff;
+        font-size: 44px;
+        padding-top: 14px; }
+      #play .paly_game .paly_heading p {
+        margin-top: 4px;
+        color: white; }
+    #play .paly_game .paly_game_grid_row {
+      display: grid;
+      grid-template-columns: 32.333% 33.333% 32.333%;
+      grid-column-gap: 2%;
+      overflow: hidden; }
+      #play .paly_game .paly_game_grid_row h2 {
+        font-family: 'Gilroy_regular'; }
+      #play .paly_game .paly_game_grid_row .highest {
+        width: 100%;
+        text-align: center;
+        background-image: url(../../image/highest.jpg);
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+        padding-top: 90px; }
+        #play .paly_game .paly_game_grid_row .highest .four_d {
+          width: 80%;
+          border: solid 1px white;
+          margin: 0 auto;
+          padding-top: 35px;
+          padding-bottom: 63px; }
+        #play .paly_game .paly_game_grid_row .highest #play h2 {
+          color: #ffff; }
+        #play .paly_game .paly_game_grid_row .highest p {
+          margin-top: -1px;
+          color: white;
+          font-size: 22px; }
+        #play .paly_game .paly_game_grid_row .highest .main-button {
+          border: solid 2px;
+          color: yellow;
+          padding: 6px 25px;
+          font-weight: 600;
+          font-size: 17px;
+          display: inline-block; }
+      #play .paly_game .paly_game_grid_row .casion_games_grid_row {
+        width: 100%; }
+        #play .paly_game .paly_game_grid_row .casion_games_grid_row .live {
+          width: 100%;
+          background-image: url(../../image/live.jpg);
+          height: 340px;
+          background-size: cover;
+          background-position: center left; }
+          #play .paly_game .paly_game_grid_row .casion_games_grid_row .live .heading {
+            width: 94%;
+            margin-left: auto;
+            padding-top: 19px; }
+            #play .paly_game .paly_game_grid_row .casion_games_grid_row .live .heading h2 span {
+              font-size: 45px !important;
+              color: #ffff;
+              text-transform: uppercase; }
+          #play .paly_game .paly_game_grid_row .casion_games_grid_row .live .evolution {
+            width: 50%;
+            margin-top: 21px;
+            border: solid 1px white;
+            margin-left: 30px;
+            text-align: center;
+            padding-top: 11px;
+            padding-bottom: 27px; }
+            #play .paly_game .paly_game_grid_row .casion_games_grid_row .live .evolution p {
+              color: white;
+              margin-top: 0; }
+        #play .paly_game .paly_game_grid_row .casion_games_grid_row .sports {
+          background-image: url(../../image/english.jpg);
+          width: 100%;
+          margin-top: 23px;
+          text-align: center;
+          background-size: cover;
+          height: 377px;
+          background-position: center center; }
+          #play .paly_game .paly_game_grid_row .casion_games_grid_row .sports h2 span {
+            font-size: 45px !important;
+            color: #ffff;
+            text-transform: uppercase; }
+          #play .paly_game .paly_game_grid_row .casion_games_grid_row .sports .sports_child_grid {
+            display: grid;
+            grid-template-columns: 23% 50% 23%;
+            grid-template-rows: auto auto auto;
+            margin-top: 28px;
+            grid-column-gap: 3%; }
+            #play .paly_game .paly_game_grid_row .casion_games_grid_row .sports .sports_child_grid .englis_premiure {
+              border: solid 1px white;
+              padding-top: 22px;
+              padding-bottom: 35px; }
+              #play .paly_game .paly_game_grid_row .casion_games_grid_row .sports .sports_child_grid .englis_premiure span {
+                font-size: 14px;
+                color: white;
+                font-weight: 600; }
+              #play .paly_game .paly_game_grid_row .casion_games_grid_row .sports .sports_child_grid .englis_premiure h5 {
+                font-size: 24px;
+                color: white;
+                line-height: 26px;
+                margin-top: 7px; }
+              #play .paly_game .paly_game_grid_row .casion_games_grid_row .sports .sports_child_grid .englis_premiure h6 {
+                font-size: 14px;
+                color: white;
+                margin-top: 9px;
+                font-weight: 600; }
+              #play .paly_game .paly_game_grid_row .casion_games_grid_row .sports .sports_child_grid .englis_premiure .play_noww {
+                transform: translate(0px, 43px);
+                -webkit-transform: translate(0px, 43px); }
+          #play .paly_game .paly_game_grid_row .casion_games_grid_row .sports figcaption {
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            text-align: center;
+            text-transform: uppercase; }
+          #play .paly_game .paly_game_grid_row .casion_games_grid_row .sports .aston {
+            align-self: center;
+            transform: translate(-5px, 0);
+            -webkit-transform: translate(-5px, 0); }
+      #play .paly_game .paly_game_grid_row .promtion {
+        width: 100%;
+        background-image: url(../../image/promtion.jpg);
+        height: 740px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center bottom; }
+        #play .paly_game .paly_game_grid_row .promtion .haeding {
+          border: solid 1px white;
+          text-align: center;
+          width: 80%;
+          position: absolute;
+          bottom: 68px;
+          left: 0;
+          right: 0;
+          margin: 0 auto; }
+          #play .paly_game .paly_game_grid_row .promtion .haeding h2 span {
+            font-size: 42px;
+            margin-top: -17px; }
+          #play .paly_game .paly_game_grid_row .promtion .haeding p {
+            margin-top: 0;
+            color: white; }
+          #play .paly_game .paly_game_grid_row .promtion .haeding .play_noww {
+            transform: translate(3px, 9px);
+            -webkit-transform: translate(3px, 9px); }
+    #play .paly_game .bonus {
+      width: 100%;
+      position: relative;
+      height: 100%; }
+
+#slots {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  background-image: url(../../image/spiderman.jpg);
+  position: relative;
+  z-index: 999;
+  padding-top: 50px; }
+  #slots::after {
+    position: absolute;
+    background: rgba(238, 174, 0, 0.8);
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: -1; }
+  #slots .heading {
+    width: 100%;
+    text-align: center; }
+    #slots .heading h2 {
+      color: white; }
+    #slots .heading p {
+      margin-top: 7px;
+      color: white; }
+  #slots .slider_area {
+    width: 100%;
+    margin-top: 60px; }
+    #slots .slider_area figure img {
+      width: 100%;
+      height: 550px;
+      object-fit: cover;
+      position: relative; }
+    #slots .slider_area figcaption {
+      transform: translate(0px, -82px);
+      -webkit-transform: translate(0px, -82px);
+      text-align: center;
+      color: white;
+      width: 100%;
+      display: block;
+      overflow: hidden; }
+    #slots .slider_area .sart.slick-slide.slick-cloned.slick-active img {
+      height: 600px !important; }

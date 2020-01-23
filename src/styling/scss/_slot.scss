@@ -1,0 +1,150 @@
+#slots {
+	width: 100%;
+	display: block;
+    overflow: hidden;
+    background-image: url(../../image/spiderman.jpg);
+    position: relative;
+    z-index: 999;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    &::after {
+        position: absolute;
+        background:rgba(238, 174, 0, 0.8);
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: -1;
+    }
+    .heading {
+        width: 100%;
+        text-align: center;
+        h2 {
+            color: white;
+        }
+        p {
+            margin-top: 7px;
+            color: white;
+        }
+    }
+    
+
+    .wrap {
+        position: relative;
+        z-index: 100;
+        width: 100%;
+        height: 100%;
+       
+        overflow: hidden;
+      }
+    
+      .item.slick-slide {
+        width: 400px;
+        height: 400px !important;
+        transition: transform .4s;
+        position: relative; 
+      }
+      
+      .slick-slide:after {
+        content:'';
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,.5);
+        transition: transform .4s;
+      }
+      
+      .item.slick-slide {
+        transform: scale(0.7)  translate(640px);
+      }
+      
+      .item.slick-slide.slick-center + .slick-slide {
+        transform: scale(0.8) translate(-250px);
+        z-index: 10;
+      }
+      
+      .item.slick-slide.slick-center + .slick-slide + .item.slick-slide {
+        transform: scale(0.7)  translate(-640px);
+        z-index: 5;
+      }
+      
+      .item.slick-slide.slick-active {
+        transform: scale(0.8) translate(250px);
+      }
+      
+      .item.slick-slide.slick-center {
+        /* margin: 0 -10%; */
+        transform: scale(1);
+        z-index: 30;
+      }
+      
+      .slick-center:after {
+        opacity: 0;
+      }
+      .item.slick-slide figcaption {
+        position: absolute;
+        bottom: 25px;
+        left: 0;
+        right: 0;
+        text-align: center; display: none;
+
+        h3 {
+            color: white;
+            text-transform: uppercase;
+            font-weight: bolder;
+            letter-spacing: 1px;
+           
+     
+        }
+    }
+    .item.slick-slide.slick-current.slick-active.slick-center  figcaption{display: block;}
+    .slider_area {
+        width: 100%;
+        overflow: hidden;
+        margin-top: 49px;
+    }
+    .v3_casino {
+        margin-top: 70px;
+        width: 100%;
+        max-width: 1014px;
+        background: rgba(143, 0, 6, 0.9);
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50px;
+        padding-top: 42px;
+        padding-bottom: 67px;
+        padding-left: 60px;
+        padding-right: 60px;
+        h2 {
+            color: white;
+        }
+        p{color: white;}
+        .primary_button.btn {
+            margin-top: 25px;
+            display: inline-block;
+            padding: 10px 36px;
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+
+

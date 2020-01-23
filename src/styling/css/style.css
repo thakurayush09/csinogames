@@ -736,7 +736,8 @@ header {
   background-image: url(../../image/spiderman.jpg);
   position: relative;
   z-index: 999;
-  padding-top: 50px; }
+  padding-top: 50px;
+  padding-bottom: 100px; }
   #slots::after {
     position: absolute;
     background: rgba(238, 174, 0, 0.8);
@@ -756,21 +757,170 @@ header {
     #slots .heading p {
       margin-top: 7px;
       color: white; }
+  #slots .wrap {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
+  #slots .item.slick-slide {
+    width: 400px;
+    height: 400px !important;
+    transition: transform .4s;
+    position: relative; }
+  #slots .slick-slide:after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: transform .4s; }
+  #slots .item.slick-slide {
+    transform: scale(0.7) translate(640px); }
+  #slots .item.slick-slide.slick-center + .slick-slide {
+    transform: scale(0.8) translate(-250px);
+    z-index: 10; }
+  #slots .item.slick-slide.slick-center + .slick-slide + .item.slick-slide {
+    transform: scale(0.7) translate(-640px);
+    z-index: 5; }
+  #slots .item.slick-slide.slick-active {
+    transform: scale(0.8) translate(250px); }
+  #slots .item.slick-slide.slick-center {
+    /* margin: 0 -10%; */
+    transform: scale(1);
+    z-index: 30; }
+  #slots .slick-center:after {
+    opacity: 0; }
+  #slots .item.slick-slide figcaption {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: none; }
+    #slots .item.slick-slide figcaption h3 {
+      color: white;
+      text-transform: uppercase;
+      font-weight: bolder;
+      letter-spacing: 1px; }
+  #slots .item.slick-slide.slick-current.slick-active.slick-center figcaption {
+    display: block; }
   #slots .slider_area {
     width: 100%;
-    margin-top: 60px; }
-    #slots .slider_area figure img {
-      width: 100%;
-      height: 550px;
-      object-fit: cover;
-      position: relative; }
-    #slots .slider_area figcaption {
-      transform: translate(0px, -82px);
-      -webkit-transform: translate(0px, -82px);
-      text-align: center;
+    overflow: hidden;
+    margin-top: 49px; }
+  #slots .v3_casino {
+    margin-top: 70px;
+    width: 100%;
+    max-width: 1014px;
+    background: rgba(143, 0, 6, 0.9);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    padding-top: 42px;
+    padding-bottom: 67px;
+    padding-left: 60px;
+    padding-right: 60px; }
+    #slots .v3_casino h2 {
+      color: white; }
+    #slots .v3_casino p {
+      color: white; }
+    #slots .v3_casino .primary_button.btn {
+      margin-top: 25px;
+      display: inline-block;
+      padding: 10px 36px; }
+
+footer {
+  width: 100%;
+  display: block;
+  background-image: url(../../image/fooyt.jpg);
+  position: relative;
+  z-index: 999; }
+  footer::after {
+    position: absolute;
+    background: rgba(0, 21, 80, 0.9);
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1; }
+  footer .soicial-iocn {
+    width: 100%;
+    text-align: center;
+    margin-top: -59px;
+    display: inline-block; }
+    footer .soicial-iocn li {
+      display: inline-block;
+      margin: 0 9px; }
+      footer .soicial-iocn li img {
+        width: 80px;
+        height: 80px; }
+  footer .footer_logo {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px; }
+    footer .footer_logo img {
+      width: 355PX;
+      height: 80px; }
+  footer .footer_menu {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 20px; }
+    footer .footer_menu ul {
+      max-width: 1122px;
+      margin: 0 auto;
+      padding: 21px 12px;
+      border-top: solid 1px white;
+      border-bottom: solid 1px white; }
+      footer .footer_menu ul li {
+        display: inline-block; }
+        footer .footer_menu ul li a {
+          color: white;
+          font-size: 20px;
+          padding: 0 11px; }
+  footer .icon_footer {
+    margin-top: 48px;
+    width: 100%;
+    text-align: center; }
+    footer .icon_footer h4 {
       color: white;
+      font-size: 26px;
+      font-weight: 500; }
+    footer .icon_footer figure img {
+      width: 624px;
+      height: 60px;
+      margin-top: 28px; }
+  footer .copy_right {
+    width: 100%;
+    background: #8f1109;
+    margin-top: 60px; }
+    footer .copy_right .copy-right_grid_row {
       width: 100%;
-      display: block;
+      max-width: 1145px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
       overflow: hidden; }
-    #slots .slider_area .sart.slick-slide.slick-cloned.slick-active img {
-      height: 600px !important; }
+      footer .copy_right .copy-right_grid_row p {
+        color: white; }
+    footer .copy_right .lock {
+      width: 100%; }
+      footer .copy_right .lock figure {
+        display: flex;
+        display: -webkit-flex;
+        margin-top: 21px;
+        justify-content: center;
+        -webkit-justify-content: center; }
+        footer .copy_right .lock figure img {
+          width: 15px;
+          height: 20px; }
+        footer .copy_right .lock figure figcaption {
+          margin-left: 12px;
+          color: white;
+          margin-top: -1px; }

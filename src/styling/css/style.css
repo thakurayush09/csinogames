@@ -238,18 +238,42 @@
 h1 {
   font-size: 100px;
   font-family: 'Gilroy_bold'; }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 60px; } }
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 30px; } }
 
 h2 {
   font-size: 60px;
   font-family: 'Pacifico', cursive; }
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 40px; } }
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 24px; } }
 
 h3 {
   font-size: 40px;
   font-family: 'Gilroy_bold'; }
+  @media (max-width: 768px) {
+    h3 {
+      font-size: 28px; } }
+  @media (max-width: 480px) {
+    h3 {
+      font-size: 22px; } }
 
 h4 {
   font-size: 24px;
   font-family: 'Gilroy_thin'; }
+  @media (max-width: 768px) {
+    h4 {
+      font-size: 21px; } }
+  @media (max-width: 480px) {
+    h4 {
+      font-size: 19px; } }
 
 p {
   font-size: 18px;
@@ -330,6 +354,9 @@ header {
     grid-template-columns: 18% 67% 15%;
     grid-template-rows: auto auto auto;
     padding-top: 9px; }
+    @media (max-width: 1340px) {
+      header .grid_row {
+        grid-template-columns: 20% 62% 18%; } }
     header .grid_row .logo {
       width: 100%;
       align-self: center; }
@@ -366,9 +393,25 @@ header {
             header .grid_row .menu nav ul li a {
               font-size: 17px;
               padding: 0 7px; } }
+          @media (max-width: 1413px) {
+            header .grid_row .menu nav ul li a {
+              font-size: 15px; } }
+          @media (max-width: 1340px) {
+            header .grid_row .menu nav ul li a {
+              font-size: 14px;
+              padding: 0 2px; } }
+          @media (max-width: 1269px) {
+            header .grid_row .menu nav ul li a {
+              font-size: 13px; } }
       header .grid_row .menu nav ul li:hover::after {
         width: 100% !important;
         transition: all ease-out 0.6s; }
+      @media (max-width: 1200px) {
+        header .grid_row .menu {
+          display: none; } }
+    @media (max-width: 1200px) {
+      header .grid_row .menu.mobile-menu {
+        display: block !important; } }
     header .grid_row .butoon_top_bar {
       width: 100%;
       display: grid;
@@ -376,6 +419,9 @@ header {
       grid-template-rows: auto auto;
       grid-column-gap: 15px;
       align-content: center; }
+      @media (max-width: 1412px) {
+        header .grid_row .butoon_top_bar {
+          grid-template-columns: 42% 54%; } }
       header .grid_row .butoon_top_bar div {
         width: 100%;
         text-align: center; }
@@ -437,6 +483,100 @@ header {
         header .grid_row .butoon_top_bar .Join_Now a:hover::after {
           width: 0 !important;
           transition: all ease-out 0.5s; }
+  header .mobile-menu {
+    display: none; }
+  header #toggle {
+    width: 28px;
+    height: 30px;
+    margin: 10px auto; }
+  header #toggle div {
+    width: 100%;
+    height: 5px;
+    background: white;
+    margin: 4px auto;
+    transition: all 0.3s;
+    backface-visibility: hidden; }
+  header #toggle.on .one {
+    transform: rotate(45deg) translate(5px, 5px); }
+  header #toggle.on .two {
+    opacity: 0; }
+  header #toggle.on .three {
+    transform: rotate(-45deg) translate(7px, -8px); }
+  header #menu {
+    display: none; }
+  @media (max-width: 1200px) {
+    header #toggle {
+      order: 1;
+      width: 30px;
+      height: 21px;
+      position: absolute;
+      right: 30px;
+      top: 19px;
+      z-index: 999; }
+    header #menu {
+      width: 100%;
+      overflow: hidden;
+      position: absolute;
+      background: yellow;
+      top: 85px;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      z-index: 999; }
+      header #menu nav {
+        width: 100%;
+        padding: 0 21px; }
+        header #menu nav .ma li a {
+          color: red;
+          font-size: 21px;
+          line-height: 35px;
+          font-weight: bold;
+          text-transform: uppercase; } }
+  header .grid_row {
+    grid-template-columns: auto; }
+  header .grid_row .butoon_top_bar {
+    grid-template-columns: auto;
+    display: flex;
+    -webkit-display: flex;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    left: 26%;
+    top: 34px; }
+  header .grid_row .butoon_top_bar .Login {
+    align-self: center;
+    width: 100%;
+    text-align: end; }
+  header .grid_row .butoon_top_bar .Join_Now {
+    align-self: center;
+    width: 100%;
+    text-align: start; }
+  @media (max-width: 767px) {
+    header .grid_row .butoon_top_bar {
+      left: 20%; } }
+  @media (max-width: 630px) {
+    header .grid_row .butoon_top_bar {
+      left: 38px; } }
+  header .grid_row .logo figure img {
+    width: 146px;
+    height: 39px;
+    object-fit: cover;
+    margin-top: 14px; }
+  @media (max-width: 480px) {
+    header .grid_row .butoon_top_bar {
+      left: 0;
+      top: 85px;
+      right: 0; }
+    header .grid_row .butoon_top_bar .Login {
+      text-align: center; }
+    header .grid_row .butoon_top_bar .Login a {
+      display: block;
+      max-width: 100%; }
+    header .grid_row .butoon_top_bar .Join_Now a {
+      display: block;
+      max-width: 100%; }
+    header .grid_row .butoon_top_bar {
+      grid-column-gap: 0px; } }
 
 #baner {
   width: 100%;
@@ -451,6 +591,12 @@ header {
           width: 100%;
           height: 850px;
           object-fit: cover; }
+          @media (max-width: 1200px) {
+            #baner .slider_div .firt_slide figure img {
+              height: 650px; } }
+          @media (max-width: 480px) {
+            #baner .slider_div .firt_slide figure img {
+              height: 538px; } }
       #baner .slider_div .firt_slide .text {
         width: 100%;
         position: absolute;
@@ -459,6 +605,12 @@ header {
         right: 0;
         margin: 0 auto;
         text-align: center; }
+        @media (max-width: 1200px) {
+          #baner .slider_div .firt_slide .text {
+            bottom: 57px; } }
+        @media (max-width: 1200px) {
+          #baner .slider_div .firt_slide .text {
+            bottom: 90px; } }
         #baner .slider_div .firt_slide .text h3 {
           font-family: 'Pacifico', cursive;
           color: #ffff; }
@@ -467,15 +619,30 @@ header {
           font-size: 17px;
           margin-top: 36px;
           display: inline-block; }
+          @media (max-width: 1200px) {
+            #baner .slider_div .firt_slide .text .primary_button {
+              margin-top: 20px; } }
+          @media (max-width: 767px) {
+            #baner .slider_div .firt_slide .text .primary_button {
+              padding: 8px 22px;
+              font-size: 14px; } }
     #baner .slider_div .slick-prev {
       left: 37px;
       z-index: 99; }
+      @media (max-width: 767px) {
+        #baner .slider_div .slick-prev {
+          left: 0;
+          margin-top: -27px; } }
     #baner .slider_div .a-right {
       width: 60px;
       height: 60px; }
     #baner .slider_div .slick-next {
       right: 37px;
       z-index: 99; }
+      @media (max-width: 767px) {
+        #baner .slider_div .slick-next {
+          right: 0;
+          margin-top: -27px; } }
     #baner .slider_div .a-left {
       width: 60px;
       height: 60px; }
@@ -505,12 +672,23 @@ header {
     display: grid;
     grid-template-columns: 67% 30%;
     grid-column-gap: 3%; }
+    @media (max-width: 1200px) {
+      #play .play_grid_row {
+        grid-template-columns: auto;
+        grid-column-gap: 0%; } }
     #play .play_grid_row .number {
       width: 100%; }
       #play .play_grid_row .number .child_grid_row {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         text-align: center; }
+        @media (max-width: 768px) {
+          #play .play_grid_row .number .child_grid_row {
+            grid-template-columns: auto; }
+            #play .play_grid_row .number .child_grid_row .main-area {
+              margin-bottom: 20px;
+              border-bottom: solid 2px white;
+              padding-bottom: 20px; } }
         #play .play_grid_row .number .child_grid_row .main-area .step {
           display: flex;
           display: -webkit-flex;
@@ -530,6 +708,10 @@ header {
           #play .play_grid_row .number .child_grid_row .main-area figure img {
             width: 140px;
             height: 140px; }
+            @media (max-width: 767px) {
+              #play .play_grid_row .number .child_grid_row .main-area figure img {
+                width: auto;
+                height: auto; } }
           #play .play_grid_row .number .child_grid_row .main-area figure figcaption {
             margin-top: 19px; }
             #play .play_grid_row .number .child_grid_row .main-area figure figcaption h3 {
@@ -557,12 +739,18 @@ header {
             margin-top: 12px; }
         #play .play_grid_row .bar_code .overlay .image {
           width: 100%; }
+          @media (max-width: 1200px) {
+            #play .play_grid_row .bar_code .overlay .image {
+              margin-bottom: 50px; } }
           #play .play_grid_row .bar_code .overlay .image figure {
             width: 70%;
             display: grid;
             grid-template-columns: 1fr 1fr;
             margin: 0 auto;
             border: solid 2px #ffce00; }
+            @media (max-width: 400px) {
+              #play .play_grid_row .bar_code .overlay .image figure {
+                width: 97%; } }
             #play .play_grid_row .bar_code .overlay .image figure img {
               width: 108px;
               height: 108px; }
@@ -586,6 +774,9 @@ header {
         color: #ffff;
         font-size: 44px;
         padding-top: 14px; }
+        @media (max-width: 991px) {
+          #play .paly_game .paly_heading h2 {
+            font-size: 30px; } }
       #play .paly_game .paly_heading p {
         margin-top: 4px;
         color: white; }
@@ -594,6 +785,10 @@ header {
       grid-template-columns: 32.333% 33.333% 32.333%;
       grid-column-gap: 2%;
       overflow: hidden; }
+      @media (max-width: 991px) {
+        #play .paly_game .paly_game_grid_row {
+          grid-template-columns: auto;
+          grid-column-gap: 0%; } }
       #play .paly_game .paly_game_grid_row h2 {
         font-family: 'Gilroy_regular'; }
       #play .paly_game .paly_game_grid_row .highest {
@@ -604,6 +799,10 @@ header {
         background-size: cover;
         background-position: center center;
         padding-top: 90px; }
+        @media (max-width: 991px) {
+          #play .paly_game .paly_game_grid_row .highest {
+            padding-top: 40px;
+            padding-bottom: 30px; } }
         #play .paly_game .paly_game_grid_row .highest .four_d {
           width: 80%;
           border: solid 1px white;
@@ -625,6 +824,9 @@ header {
           display: inline-block; }
       #play .paly_game .paly_game_grid_row .casion_games_grid_row {
         width: 100%; }
+        @media (max-width: 991px) {
+          #play .paly_game .paly_game_grid_row .casion_games_grid_row {
+            margin-top: 90px; } }
         #play .paly_game .paly_game_grid_row .casion_games_grid_row .live {
           width: 100%;
           background-image: url(../../image/live.jpg);
@@ -639,6 +841,9 @@ header {
               font-size: 45px !important;
               color: #ffff;
               text-transform: uppercase; }
+              @media (max-width: 480px) {
+                #play .paly_game .paly_game_grid_row .casion_games_grid_row .live .heading h2 span {
+                  text-align: center; } }
           #play .paly_game .paly_game_grid_row .casion_games_grid_row .live .evolution {
             width: 50%;
             margin-top: 21px;
@@ -647,6 +852,12 @@ header {
             text-align: center;
             padding-top: 11px;
             padding-bottom: 27px; }
+            @media (max-width: 991px) {
+              #play .paly_game .paly_game_grid_row .casion_games_grid_row .live .evolution {
+                width: 60%; } }
+            @media (max-width: 480px) {
+              #play .paly_game .paly_game_grid_row .casion_games_grid_row .live .evolution {
+                width: 85%; } }
             #play .paly_game .paly_game_grid_row .casion_games_grid_row .live .evolution p {
               color: white;
               margin-top: 0; }
@@ -668,10 +879,17 @@ header {
             grid-template-rows: auto auto auto;
             margin-top: 28px;
             grid-column-gap: 3%; }
+            @media (max-width: 480px) {
+              #play .paly_game .paly_game_grid_row .casion_games_grid_row .sports .sports_child_grid {
+                grid-template-columns: auto; } }
             #play .paly_game .paly_game_grid_row .casion_games_grid_row .sports .sports_child_grid .englis_premiure {
               border: solid 1px white;
               padding-top: 22px;
               padding-bottom: 35px; }
+              @media (max-width: 480px) {
+                #play .paly_game .paly_game_grid_row .casion_games_grid_row .sports .sports_child_grid .englis_premiure {
+                  width: 90%;
+                  margin: 0 auto; } }
               #play .paly_game .paly_game_grid_row .casion_games_grid_row .sports .sports_child_grid .englis_premiure span {
                 font-size: 14px;
                 color: white;
@@ -699,6 +917,9 @@ header {
             align-self: center;
             transform: translate(-5px, 0);
             -webkit-transform: translate(-5px, 0); }
+            @media (max-width: 480px) {
+              #play .paly_game .paly_game_grid_row .casion_games_grid_row .sports .aston {
+                display: none; } }
       #play .paly_game .paly_game_grid_row .promtion {
         width: 100%;
         background-image: url(../../image/promtion.jpg);
@@ -706,6 +927,10 @@ header {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center bottom; }
+        @media (max-width: 991px) {
+          #play .paly_game .paly_game_grid_row .promtion {
+            display: block;
+            margin-top: 20px; } }
         #play .paly_game .paly_game_grid_row .promtion .haeding {
           border: solid 1px white;
           text-align: center;

@@ -53,10 +53,22 @@
 
 
 
-h1{font-size: 100px;font-family: 'Gilroy_bold';}
-h2{font-size: 60px; font-family: 'Pacifico', cursive;}
-h3{font-size: 40px;font-family: 'Gilroy_bold'; }
-h4{font-size: 24px;    font-family: 'Gilroy_thin'; }
+h1{font-size: 100px;font-family: 'Gilroy_bold';
+    @media (max-width:768px){font-size: 60px;}
+    @media (max-width:480px){font-size: 30px;}
+}
+h2{font-size: 60px; font-family: 'Pacifico', cursive;
+    @media (max-width:768px){font-size: 40px;}
+    @media (max-width:480px){font-size: 24px;}
+}
+h3{font-size: 40px;font-family: 'Gilroy_bold'; 
+    @media (max-width:768px){font-size: 28px;}
+    @media (max-width:480px){font-size: 22px;}
+}
+h4{font-size: 24px;    font-family: 'Gilroy_thin'; 
+    @media (max-width:768px){font-size: 21px;}
+    @media (max-width:480px){font-size: 19px;}
+}
 p{font-size: 18px;    font-family: 'Gilroy_thin';}
 h1, h2, h3, h4, h5, h6{margin: 0;}
 ul{padding-left: 0; padding-right: 0;}

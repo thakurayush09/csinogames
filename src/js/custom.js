@@ -64,3 +64,10 @@ imgs.each(function(){
   });
   $(this).hide();
 });
+
+
+
+$("#toggle").click(function() {
+  $(this).toggleClass("on");
+  $("#menu").slideToggle();
+});

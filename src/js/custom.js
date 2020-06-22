@@ -39,18 +39,28 @@ $('.slider').slick({
   focusOnSelect: true,
   cssEase: 'linear',
   touchMove: true,
-  autoplay: true
-  
-  //         responsive: [                        
-  //             {
-  //               breakpoint: 576,
-  //               settings: {
-  //                 centerMode: false,
-  //                 variableWidth: false,
-  //               }
-  //             },
-  //         ]
+  autoplay: true,
+  responsive: [
+    {
+      breakpoint: 1202,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 });
+
 
 
 var imgs = $('.slider img');
@@ -71,3 +81,6 @@ $("#toggle").click(function() {
   $(this).toggleClass("on");
   $("#menu").slideToggle();
 });
+
+
+

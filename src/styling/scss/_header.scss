@@ -140,7 +140,14 @@ header {
    
         
         }//button
-    }///row  
+    }///row 
+    #movile-onle {
+        display: none;
+    } 
+    @media (max-width:1200px){
+        #movile-onle {
+            display: block;
+        }
     .mobile-menu {
         display: none;
     }
@@ -178,7 +185,7 @@ header {
       }
 
 
-      @media (max-width:1200px){
+   
       #toggle {
             order: 1;
             width: 30px;
@@ -212,7 +219,7 @@ header {
         }
       
 
-      }
+     
      .grid_row {
         grid-template-columns: auto;
     }
@@ -235,6 +242,7 @@ header {
         width: 100%;
         text-align: start;
     }
+}
     @media (max-width:767px){
         .grid_row .butoon_top_bar {
             left: 20%;
@@ -247,13 +255,14 @@ header {
             left: 38px;
         }
 
-    }
+    
  .grid_row .logo figure img {
         width: 146px;
         height: 39px;
         object-fit: cover;
         margin-top: 14px;
     }
+}
     @media (max-width:480px){
         .grid_row .butoon_top_bar {
             left: 0;
